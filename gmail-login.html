@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title>Gmail login</title>
+    <style>
+    body{
+    margin: 0%;
+    background-color: rgba(255, 255, 255, 0.548);
+    }
+    h2{
+        text-align: center;
+    }
+    .login{
+        color: black;
+        width: 300px;
+        padding: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 10%;
+        left: 35%; 
+        line-height: 50px;
+        border-radius: 10px;
+        background: transparent;
+        text-align: left;
+        vertical-align: middle;
+        border: 1px solid white;
+    }
+    input{
+        height: 30px;
+        width: 95%;
+        padding-left: 10px;
+        border-radius: 8px;
+        background-color: white;
+        color: blue;
+        border: none;
+    }
+    input:focus{
+        background-color: transparent;
+        color: white;
+    }
+    #myVideo{
+        position: fixed;
+        width: auto;
+        height: auto;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+    }
+    button{
+        margin: 20px;
+        width: 80px;
+        border-radius: 4px;
+        height: 30px;
+        color: white;
+        font-size: 18px;
+        border: none;
+        background-color: rgb(175, 102, 243);
+    }
+    
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="login">
+        <h2>Create Gmail Account</h2>
+        <form>
+            
+            <input type="text" name="full_name" placeholder="Full name" required>
+            <input type="number" name="contact_number" placeholder="Contact Number" min="6000000000" max="9999999999" required>
+            <input type="email" name="email" placeholder="Enter gmail id" required>
+            <button type="reset" form="lab-form">Reset</button>
+            <button type="submit" form="lab-form">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
